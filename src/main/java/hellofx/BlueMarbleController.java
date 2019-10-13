@@ -37,18 +37,26 @@ public class BlueMarbleController {
 	@FXML
 	private Button enhanced;
 
+//	@FXML
+//	void updateDate(ActionEvent event) {
+//
+//		BlueMarble blueMarble = new BlueMarble();
+////		blueMarble.setDate(datePicker.getValue().getYear() + "-0" + datePicker.getValue().getMonthValue() + "-" + datePicker.getValue().getDayOfMonth());
+//		blueMarble.setDate(
+//				"2018" + "-0" + datePicker.getValue().getMonthValue() + "-" + datePicker.getValue().getDayOfMonth());
+//		blueMarble.setEnhanced(true);
+////		Image value = new Image(BlueMarble.getMostRecentImage());
+//		image.setImage(new Image(blueMarble.getImage()));
+//	}
 	@FXML
-	void updateDate(ActionEvent event) {
+	void setEnhancedPicture(ActionEvent event) {
 
 		BlueMarble blueMarble = new BlueMarble();
-//		blueMarble.setDate(datePicker.getValue().getYear() + "-0" + datePicker.getValue().getMonthValue() + "-" + datePicker.getValue().getDayOfMonth());
-		blueMarble.setDate(
-				"2018" + "-0" + datePicker.getValue().getMonthValue() + "-" + datePicker.getValue().getDayOfMonth());
+		blueMarble.setDate(datePicker.getValue().getYear() + "-0" + datePicker.getValue().getMonthValue() + "-"
+				+ datePicker.getValue().getDayOfMonth());
 		blueMarble.setEnhanced(true);
-//		Image value = new Image(BlueMarble.getMostRecentImage());
 		image.setImage(new Image(blueMarble.getImage()));
 	}
-
 	@FXML
 	void setNormalPicture(ActionEvent event1) {
 
