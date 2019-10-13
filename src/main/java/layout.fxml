@@ -27,7 +27,12 @@
          </font>
       </Text>
       <Button fx:id="normal" layoutX="403.0" layoutY="244.0" mnemonicParsing="false" onAction="#setNormalPicture" prefHeight="31.0" prefWidth="152.0" text="NATURAL" textFill="#270786" />
-      <Button fx:id="enhanced" layoutX="403.0" layoutY="289.0" mnemonicParsing="false" onAction="#updateDate" prefHeight="31.0" prefWidth="152.0" text="ENHANCED" textFill="#36078d" />
+      <Button fx:id="enhanced" layoutX="403.0" layoutY="289.0" mnemonicParsing="false" onAction="#setEnhancedPicture" prefHeight="31.0" prefWidth="152.0" text="ENHANCED" textFill="#36078d" />
       <Button fx:id="blackAndWhite" layoutX="403.0" layoutY="335.0" mnemonicParsing="false" onAction="#blackAndWhite" prefHeight="31.0" prefWidth="152.0" text="BLACK AND WHITE" textFill="#3305a8" />
+      <ImageView fx:id="astronaut" fitHeight="41.0" fitWidth="36.0" layoutX="506.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hellofx/astronaut.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
